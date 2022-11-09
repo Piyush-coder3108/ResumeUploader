@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Uploader</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div style="text-align: center; margin: 30px 10px; " >
+        <h1>Resume Uploader</h1>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <div style="position: relative; width: 300px; margin: auto;">
+        <form action="/resume/upload" method="POST" enctype="multipart/form-data" >
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+                <label for="name">Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="date" class="form-control" name="dob" id="dob" placeholder="Date of Birth" required>
+                <label for="dob">Date of Birth</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="country" id="country" placeholder="Country" required>
+                <label for="country">Country</label>
+              </div>
+              <label for="resume">Resume</label>
+              <div class="mb-3">
+                <input type="file" class="form-control" name="resume" id="resume" placeholder="" accept="application/pdf,application/msword,
+                application/vnd.openxmlformats-officedocument.wordprocessingml.document" >
+              </div>
+              <button type="submit" class="btn btn-primary"> Submit
+              </button>
+
+        </form> 
+    </div>
+       
+<script href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+
+</script>
+</body>
+</html>
